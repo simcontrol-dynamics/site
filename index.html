@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIMCONTROL Dynamics</title>
+  <meta name="description" content="SIMCONTROL Dynamics — conception et fabrication de boîtiers électroniques pour simulateurs de mouvement.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <meta property="og:title" content="SIMCONTROL Dynamics">
+  <meta property="og:description" content="Conception et fabrication de boîtiers électroniques pour simulateurs de mouvement.">
+  <meta property="og:image" content="https://www.simcontrol-dynamics.fr/images/logo.jpg">
+  <style>
+    :root {
+      --bg: #17191e;
+      --bg2: #1f2229;
+      --card: #252932;
+      --fg: #eceef2;
+      --muted: #a3a9b6;
+      --red: #e23b3b;
+      --blue: #3fa9f5;
+      --line: #343946;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.55;
+    }
+    a { color: var(--blue); }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+
+    header { border-bottom: 1px solid var(--line); }
+    header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 12px; padding-bottom: 12px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--fg); }
+    .brand img { width: 52px; height: 52px; border-radius: 10px; }
+    .brand span { font-weight: 800; letter-spacing: .06em; font-size: 1.05rem; }
+    .brand span b { color: var(--red); font-weight: 800; }
+    nav a { color: var(--muted); text-decoration: none; margin-left: 20px; font-size: .95rem; }
+    nav a:hover { color: var(--fg); }
+
+    .hero { padding: 56px 0 32px; text-align: center; }
+    .hero h1 { margin: 0 0 12px; font-size: clamp(1.8rem, 4.5vw, 2.8rem); letter-spacing: .02em; }
+    .hero h1 b { color: var(--red); }
+    .hero p { margin: 0 auto; max-width: 640px; color: var(--muted); font-size: 1.1rem; }
+    .stripes { height: 4px; width: 120px; margin: 24px auto 0; background: linear-gradient(90deg, var(--fg) 0 33%, var(--red) 33% 66%, var(--blue) 66%); border-radius: 2px; }
+    .hero-logo { display: block; width: min(260px, 70vw); height: auto; margin: 0 auto 28px; border-radius: 18px; }
+
+    section { padding: 48px 0; }
+    section h2 { margin: 0 0 8px; font-size: 1.6rem; }
+    section .lead { margin: 0 0 28px; color: var(--muted); }
+    .alt { background: var(--bg2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+    .contact { text-align: center; }
+    .btn { display: inline-block; padding: 14px 28px; border-radius: 10px; background: var(--red); color: #fff; text-decoration: none; font-weight: 700; font-size: 1.05rem; }
+    .btn:hover { filter: brightness(1.12); }
+
+    .legal { font-size: .9rem; color: var(--muted); }
+    .legal h2 { font-size: 1.2rem; color: var(--fg); }
+    .legal h3 { font-size: 1rem; color: var(--fg); margin: 20px 0 4px; }
+    .legal p { margin: 0; }
+
+    footer { border-top: 1px solid var(--line); padding: 20px 0; font-size: .85rem; color: var(--muted); text-align: center; }
+
+    @media (max-width: 520px) {
+      nav { display: none; }
+      .hero { padding-top: 36px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <a class="brand" href="#">
+        <img src="images/logo.jpg" alt="Logo SIMCONTROL Dynamics" width="52" height="52">
+        <span>SIM<b>CONTROL</b> DYNAMICS</span>
+      </a>
+      <nav>
+        <a href="#contact">Contact</a>
+        <a href="#mentions">Mentions légales</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero wrap">
+      <img class="hero-logo" src="images/logo.jpg" alt="" width="512" height="512">
+      <h1>SIM<b>CONTROL</b> Dynamics</h1>
+      <p>Conception, fabrication et commercialisation de boîtiers électroniques pour simulateurs de mouvement.</p>
+      <div class="stripes"></div>
+    </div>
+
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p class="lead">Pour toute demande d'information, écrivez-nous.</p>
+        <a class="btn" href="mailto:contact@simcontrol-dynamics.fr">contact@simcontrol-dynamics.fr</a>
+      </div>
+    </section>
+
+    <section id="mentions" class="legal alt">
+      <div class="wrap">
+        <h2>Mentions légales</h2>
+
+        <h3>Éditeur du site</h3>
+        <p>SIMCONTROL Dynamics, SASU au capital de 500,00 €<br>
+           Siège social : 45 rue Benjamin Péret, 78370 Plaisir, France<br>
+           RCS Versailles 937 926 541 — SIRET 937 926 541 00015<br>
+           N° TVA intracommunautaire : FR46 937 926 541<br>
+           Contact : <a href="mailto:contact@simcontrol-dynamics.fr">contact@simcontrol-dynamics.fr</a></p>
+
+        <h3>Directeur de la publication</h3>
+        <p>Olivier Abram, Président.</p>
+
+        <h3>Hébergement</h3>
+        <p>GitHub, Inc. — 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.<br>
+           Nom de domaine : OVH SAS — 2 rue Kellermann, 59100 Roubaix, France.</p>
+
+        <h3>Données personnelles et cookies</h3>
+        <p>Ce site ne dépose aucun cookie et ne comporte aucun formulaire. L'hébergeur peut enregistrer
+           l'adresse IP des visiteurs à des fins de sécurité. Les messages envoyés à l'adresse de contact
+           ne servent qu'à répondre à la demande.</p>
+
+        <h3>Propriété intellectuelle</h3>
+        <p>Les textes et le logo de ce site sont la propriété de SIMCONTROL Dynamics.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 SIMCONTROL Dynamics</div>
+  </footer>
+
+</body>
+</html>
